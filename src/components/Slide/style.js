@@ -7,7 +7,10 @@ export const Wrapper = styled.div`
         }
         .slide-bg{background:#fff;
             .slide-ul{color:#fff;font-size: 16px;text-align:center;background:#108B96;padding:100px 0;border-radius: 0 38px 0 0;
-                li{padding:22px 0}
+                li{padding:11px 0;width: 50%;margin: 11px auto;cursor:pointer;}
+                .active{background: linear-gradient(96.18deg, #23BCCA 2.84%, #59E3EF 99.82%);
+                    box-shadow: -1px -1px 4px rgba(144, 212, 218, 0.22), 7px 7px 26px #0A6871;
+                    border-radius: 8px;}
             }
         }
     }

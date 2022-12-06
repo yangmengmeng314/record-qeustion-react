@@ -23,11 +23,14 @@ export default function Home(){
     return(
         <Wrapper>
             <Search></Search>
-            {
-                question_list.map(item => {
-                    return <Question info={item} key={item.id}></Question>
-                })
-            }
+            <div className='list'>
+               {
+                    question_list.map(item => {
+                        return <Question info={item} key={item.id}></Question>
+                    })
+                } 
+            </div>
+            
         </Wrapper>
     )
 }

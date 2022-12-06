@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Wrapper } from './style'
 import logo from '../../assets/img/logo.png'
 
@@ -17,6 +17,14 @@ export default function Slide(){
             title:'校本题库'
         },
     ]
+    const [checked_tab, set_checked_tab] = useState({
+        id:1,
+        title:'上传题目'
+    })
+    const tabClick = (tab) => {
+        console.log(tab,'e')
+        set_checked_tab(tab)
+    }
     return(
         <Wrapper>
             <div className='slide'>
@@ -28,7 +36,7 @@ export default function Slide(){
                         {
                             tab_list.map(tab => {
                                 return (
-                                    <li key={tab.id}>{tab.title}</li>
+                                    <li className={checked_tab.id===tab.id ? "active":null} key={tab.id} onClick={() => tabClick(tab)}>{tab.title}</li>
                                 )
                             })
                         }
