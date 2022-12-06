@@ -9,7 +9,7 @@ export default function Question(info){
             <img className='line-img' src={line} alt="" />
             <div className='question-box'>
                 <div className='flex_start desc'>
-                    <span>{info.info.subjectName}&nbsp;&nbsp;·&nbsp;&nbsp;</span>
+                    <span>{info.info.subjectName}&nbsp;&nbsp;·&nbsp;&nbsp;111</span>
                     <span>{info.info.cateName}&nbsp;&nbsp;·&nbsp;&nbsp;</span>
                     <span className='degree' style={{background: degreeToText(info.info.degree).color}}>{degreeToText(info.info.degree).degreeText}</span>
                 </div>
